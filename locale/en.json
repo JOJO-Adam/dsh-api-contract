@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH API Contract Studio",
+    "description": "API contract studio: contract-first authoring, breaking-change review, error contracts, versioning and deprecation, docs and examples."
+  }
+}

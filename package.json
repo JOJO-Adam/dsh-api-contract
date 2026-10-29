@@ -1,0 +1,57 @@
+{
+  "name": "@jojonadam/dsh-api-contract",
+  "version": "0.1.0",
+  "description": "API contract studio for DeepSeek Harness: contract-first authoring, breaking-change review, error contracts, versioning and docs. 接口契约 · 变更评审 · 六本手册。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib",
+    "skills",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "locale"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "api",
+    "openapi",
+    "contract",
+    "breaking-change",
+    "rest"
+  ],
+  "license": "MIT",
+  "author": "JOJO & Adam",
+  "homepage": "https://jojo-adam.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JOJO-Adam/dsh-api-contract.git"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2",
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/JOJO-Adam/dsh-api-contract/issues"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "icon": "icon.svg"
+}
